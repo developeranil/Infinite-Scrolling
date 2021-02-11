@@ -29,7 +29,7 @@ function infinitScroll() {
 		jQuery.ajax({    //create an ajax request to display.php
         type: "GET",
         data: 'p=' + showed_posts,
-        url: "<?php bloginfo('template_url');?>/ajax-post2.php",
+        url: "ajax.php",
         dataType: "html",   //expect html to be returned
         success: function(response){
                 jQuery("#responsecontainer").append(response);
